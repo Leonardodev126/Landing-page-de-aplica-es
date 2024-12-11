@@ -1,0 +1,25 @@
+:root {
+    --bg-color: rebeccapurple;
+}
+
+html, body {
+    background-color: var(--bg-color);
+    height: 100%;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (width > 700px) {
+    
+    :root {
+        --bg-color: orangered;
+    }
+}
