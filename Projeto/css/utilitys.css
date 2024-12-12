@@ -1,3 +1,63 @@
+
+
+/* MOBILE*/
+
+.py-base {
+    /* Eixo vertical */
+    padding-block: var(--py-base); /* 16px */
+}
+
+
+.py-lg {
+    /* Eixo vertical */
+    padding-block: var(--py-lg);  /* 24px */
+}
+
+.py-xl {
+    /* Eixo vertical */
+    padding-block: var(--py-xl); /* 48px */
+}
+
+.px-lg {
+    /* Horizontal */
+    padding-inline: var(--px-lg); /* 48px */
+}
+
+
 .container {
-    
+    --max-width: 375px; /* mobile */
+    width: min(var(--max-width), 100% - var(--px-lg) * 2); /* Pege o menor valor entre 375px e 327px(Resultado do cálculo) */
+    /* max-width: var(--max-width);
+    width: 100% - var(--px-lg) * 2; */
+    margin-inline: auto;
+    border: solid violet;
+}
+
+/* Classe utilitária para esconder os elementos no mobile */
+.desktop-only {
+    display: none;
+}
+
+.even-columns {
+    display: grid;
+    gap: 1rem;
+}
+
+/* Media querie para o container-DESKTOP */
+@media (width >= 80em) {
+
+    /* Desktop */
+    .container {
+        --max-width: 80rem;
+    }
+
+    /* Trás o elemento a tona no desktop */
+    .desktop-only {
+        display: initial;
+    }
+
+    .even-columns {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }

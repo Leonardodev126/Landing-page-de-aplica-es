@@ -33,6 +33,13 @@
     --fs-xl: 1.5rem;
     --fs-2x1: 2.5rem;
 
+    /* Altura do mobile */
+    --py-base: 1rem; /* Eixo vertical */
+    --py-lg: 1.5rem;
+    --py-xl: 3rem;
+
+    /* Largura do mobile */
+    --px-lg: 1.5rem;  /* Padding-lateral do meu app para mobile */
 }
 
 html {
@@ -76,9 +83,22 @@ ul [role="list"] {
 }
 
 @media (width >= 80em) {
+
+    /* Desktop */
     :root {
         --fs-lg: 2rem;
         --fs-xl: 3rem;
         --fs-2x1: 4rem;    
+
+
+        /* Altura do desktop */
+        --py-base: 1.5rem; /* Eixo vertical */
+        --py-lg: 2.5rem;
+        --py-xl: 5rem;
+    
+    
+        /* Largura do desktop */
+        --px-lg: 2rem;  /* padding-inline para as lateirais em telas grandes como 1280px - 80em */
+
     }
 }
