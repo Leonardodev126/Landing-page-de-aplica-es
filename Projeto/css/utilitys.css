@@ -43,6 +43,18 @@
     gap: 1rem;
 }
 
+.flex {
+    display: flex;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
 /* Media querie para o container-DESKTOP */
 @media (width >= 80em) {
 
@@ -61,3 +73,4 @@
         grid-auto-columns: 1fr;
     }
 }
+
