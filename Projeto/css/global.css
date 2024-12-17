@@ -50,8 +50,9 @@ html {
     color: var(--text-color-primary);
 }
 
-body {
+html, body {
     background-color: var(--bg-color);
+    height: 100%;
 }
 
 h1, h2, h3 {
@@ -76,6 +77,13 @@ h3 {
 a {
     text-decoration: none;
     color: inherit;   /* Herdando a cor do pai dele. (Todos os links) */
+}
+
+a:hover {
+    background: linear-gradient(90deg, var(--brand-color-secondary) 0%,var(--brand-color-primary) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 ul [role="list"] {
