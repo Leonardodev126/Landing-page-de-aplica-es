@@ -42,17 +42,14 @@
     --px-lg: 1.5rem;  /* Padding-lateral do meu app para mobile */
 }
 
-html {
+html, body {
+    background-color: var(--bg-color);
+    height: 100%;
     font-family: var(--ff-sans);
     font-weight: var(--fw-base);
     font-size: var(--ff-base);
     line-height: 1.6;
     color: var(--text-color-primary);
-}
-
-html, body {
-    background-color: var(--bg-color);
-    height: 100%;
 }
 
 h1, h2, h3 {
