@@ -42,7 +42,7 @@
     --px-lg: 1.5rem;  /* Padding-lateral do meu app para mobile */
 }
 
-html, body {
+body {
     background-color: var(--bg-color);
     height: 100%;
     font-family: var(--ff-sans);
@@ -85,6 +85,11 @@ a:hover {
 
 ul [role="list"] {
     list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
 }
 
 @media (width >= 80em) {
