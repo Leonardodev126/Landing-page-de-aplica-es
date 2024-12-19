@@ -62,6 +62,7 @@
     display: grid;
 }
 
+
 /* Media querie para o container-DESKTOP */
 @media (width >= 80em) {
 

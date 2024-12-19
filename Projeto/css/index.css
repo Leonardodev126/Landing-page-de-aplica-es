@@ -6,3 +6,5 @@
 @import url(hero-section.css);
 @import url(sections.css);
 @import url(about-section.css);
+@import url(cards.css);
+@import url(features.css) (width >= 80rem); /* Só irá importar esse estilo css se a tela for maior que 1280px */

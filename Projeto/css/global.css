@@ -42,8 +42,12 @@
     --px-lg: 1.5rem;  /* Padding-lateral do meu app para mobile */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: var(--bg-color);
+    background-color: black; /* var(--bg-color) */
     height: 100%;
     font-family: var(--ff-sans);
     font-weight: var(--fw-base);
